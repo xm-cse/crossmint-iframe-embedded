@@ -5,7 +5,7 @@ function App() {
     <div className="container">
       <div className="checkout-wrapper">
         <iframe
-          src="https://crossmint-custom-checkout.vercel.app/"
+          src="https://crossmint-embedded-demo-nine.vercel.app/"
           allow="payment"
           allowFullScreen
           title="Crossmint Payment Checkout"
