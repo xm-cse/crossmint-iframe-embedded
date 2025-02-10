@@ -11,12 +11,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .checkout-wrapper {
   width: 100%;
-  max-width: 480px;
-  margin: 20px;
+  max-width: 1200px;
+  margin: 0;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
@@ -25,16 +26,16 @@ body {
 
 .checkout-frame {
   width: 100%;
-  height: 650px;
-  border: none;
+  height: 800px;
+  border: 2px solid #ff4444;
   display: block;
+  border-radius: 8px;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -71,4 +72,20 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+.cta-button {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #535bf2;
 }
