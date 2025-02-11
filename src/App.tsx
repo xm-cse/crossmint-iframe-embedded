@@ -3,6 +3,9 @@ import "./App.css";
 
 function App() {
   const [showCheckout, setShowCheckout] = useState(false);
+  const checkoutUrl = import.meta.env.VITE_CHECKOUT_URL?.trim();
+  
+  console.log("Checkout URL:", checkoutUrl);
 
   return (
     <div className="container">
@@ -17,7 +20,7 @@ function App() {
       ) : (
         <div className="checkout-wrapper">
           <iframe
-            src={import.meta.env.VITE_CHECKOUT_URL}
+            src={checkoutUrl}
             allow="payment"
             allowFullScreen
             title="Crossmint Payment Checkout"
