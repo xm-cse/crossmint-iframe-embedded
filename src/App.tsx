@@ -17,7 +17,7 @@ function App() {
       ) : (
         <div className="checkout-wrapper">
           <iframe
-            src="https://crossmint-embedded-demo-nine.vercel.app/"
+            src={import.meta.env.VITE_CHECKOUT_URL}
             allow="payment"
             allowFullScreen
             title="Crossmint Payment Checkout"
